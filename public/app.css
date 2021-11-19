@@ -1,0 +1,45 @@
+body {
+    background: #212529;
+}
+
+.navbar-brand {
+    font-size: 4vh;
+}
+
+img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.row {
+    color: white;
+    margin: 2% 2%;
+}
+
+
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+f-grow-10 {
+    flex-grow: 10;
+}
+
+f-grow-1 {
+    flex-grow: 1;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.h-100p {
+    height: 100%;
+}
