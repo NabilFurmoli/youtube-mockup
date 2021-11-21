@@ -26,7 +26,7 @@ const VideoPlayer = ({ videoItem }) => {
                 </div>
             )
         } else {
-            return <p>Please Search and Select a video to play</p>
+            return <p></p>
         }
     }
 

@@ -6,12 +6,6 @@ import SearchBar from './SearchBar';
 import VideoList from './VideoList';
 import VideoPlayer from './VideoPlayer';
 
-const defaultList = [
-    { name: 'hola', key: '0', src: "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" }
-    , { name: 'hey', key: '1', src: "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" }
-    , { name: 'Yoo', key: '2', src: "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" }
-]
-
 const Youtube = () => {
 
     const [selectedVideo, setSelectedVideo] = useState(null);
@@ -51,10 +45,10 @@ const Youtube = () => {
                 </Col>
             </Row>
             <Row>
-                <Col className="bg-dark border" xs="8">
+                <Col className="bg-dark border video-player-cont" md="8" sm="12">
                     <VideoPlayer videoItem={selectedVideo} />
                 </Col>
-                <Col className="bg-dark border" xs="4">
+                <Col className="bg-dark border video-list-cont" md="4" sm="12">
                     <VideoList onSelectVideoItem={onSelectVideoItem} videosList={videosList} />
                 </Col>
             </Row>

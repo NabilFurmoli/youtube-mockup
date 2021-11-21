@@ -16,7 +16,7 @@ const SearchBar = ({ onUpdateVideoList, onSelectVideoItem }) => {
 
     useEffect(() => {
         if (text) {
-            const timeoutId = setTimeout(async () => {
+            const timeoutId = setTimeout(async() => {
                 const response = await YoutubeApi.get('/search', {
                     params: {
                         q: text
@@ -37,21 +37,24 @@ const SearchBar = ({ onUpdateVideoList, onSelectVideoItem }) => {
         }
     }, [text]);
 
-    return (
-        <>
-            <Form onSubmit={(e) => {e.preventDefault()}}>
-                <FormGroup className="mt-3">
-                    <Input
-                        id="searchLabel"
-                        name="searchInput"
-                        value={text}
-                        placeholder="Search a Video"
-                        type="text"
-                        onChange={onChangeText}
-                    />
-                </FormGroup>
-            </Form>
-        </>
+    return ( <
+        >
+        <
+        Form onSubmit = {
+            (e) => { e.preventDefault() } } >
+        <
+        FormGroup className = "mt-3" >
+        <
+        Input id = "searchLabel"
+        name = "searchInput"
+        value = { text }
+        placeholder = "Search a Video"
+        type = "text"
+        onChange = { onChangeText }
+        /> <
+        /FormGroup> <
+        /Form> <
+        />
     );
 }
 
